@@ -38,23 +38,65 @@
     }
 
     .image-container > p {
+      z-index: 1;
       position: absolute;
-      bottom: 0;
-      left: 0;
-      margin: 0;
-      padding: 10px;
-      font-size: 24px;
+      bottom: 10px;
+      left: 26px;
+      font-size: 18px;
+      padding: 5px;
       color: white;
     }
-
-    .image-container > i {
+     
+    /* eye icon  start*/
+    .eye-icon {
+      z-index: 1;
       font-style: normal;
       position: absolute;
-      top: 10px;
+      top: 31%;
+      right: 22%;
+      color: white;
+      font-size: 14px;
+      background: #0ab2f3;
+      padding: 5px 10px 5px 10px !important;
+    }
+     .eye-icon-card {
+      z-index: 1;
+      font-style: normal;
+      position: absolute;
+      top: 50%;
       right: 10px;
       color: white;
-      font-size: 24px;
+      font-size: 14px;
       background: #0ab2f3;
+      padding: 5px 10px 5px 10px !important;
+    }
+    .eye-icon-right {
+      z-index: 1;
+      font-style: normal;
+      position: absolute;
+      top: 9% !important;
+      right: 20px !important;
+      color: white;
+      font-size: 14px;
+      background: #0ab2f3;
+      padding: 5px 10px 5px 10px !important;
+    }
+    /* eye icon */
+
+
+      .overlay-right {
+      position: absolute;
+      margin-right: 24px !important;
+      margin-left: 24px !important;
+      left: 0;
+      right: 0;
+      bottom: 12%;
+      height: 20%;
+      background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.6),
+        rgba(255, 255, 255, 0)
+      );
     }
 
     .header {
@@ -143,17 +185,7 @@
       width: 100%;
       height: 10vh;
     }
-    .eye-icon-card {
-      z-index: 1;
-      font-style: normal;
-      position: absolute;
-      top: 50%;
-      right: 10px;
-      color: white;
-      font-size: 24px;
-      background: #0ab2f3;
-      padding: 1px !important;
-    }
+    
   </style>
   <body>
     <div class="grid-container">
@@ -206,11 +238,18 @@
           <div class="col-md-9">
             <div class="OK">
               <div class="text-center mb-4">
-                <u style="font-size: 24px">XXXXX</u>
+                <p>
+                  <img
+                    src="https://s1.vnecdn.net/vnexpress/restruct/i/v921/v2_2019/pc/graphics/logo.svg "
+                    alt=""
+                    width="80px"
+                  />
+                  XXXXXXXXX
+                </p>
               </div>
             </div>
             <div>
-              <i class="bi bi-eye-fill p-2 eye-icon-card" style="top: 31%; right: 21%;"> 2</i>
+              <i class="bi bi-eye-fill p-2 eye-icon" > 2</i>
               <img
                 src="https://media.baobinhphuoc.com.vn/upload/news/7_2024/1720943178390_14461814072024.jpg"
                 class="card-img-top mb-4"
@@ -221,7 +260,7 @@
             </div>
 
             <div class="bg-light border">
-              <p class="p-5 text-left">
+              <p class="p-5 text-left mb-0">
                 <span style="font-size: 24px">
                   XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
                   XXXXXXXXXXXXXXXXXXX
@@ -246,11 +285,11 @@
                 </span>
                 <br />
                 <br />
-                <span>
+                <span >
                   XXXXXXXXXXXXXXXX:
                   <a href="#" style="text-decoration: none; color: #13B5F3;">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</a>
                 </span>
-                <div class="text-center" style="font-size: 24px; color: #fb474a">XXXXXXXXXXXXXX</div>
+                <div class="text-center p-0" style="font-size: 24px; color: #fb474a">XXXXXXXXXXXXXX</div>
               </p>
             </div>
             <div class="OK">
@@ -274,7 +313,14 @@
                       Some quick example text to build on the card title and
                       make up the bulk of the card's content.
                     </p>
-                    <p>Go somewhere</p>
+                    <p>
+                      <img
+                        src="https://s1.vnecdn.net/vnexpress/restruct/i/v921/v2_2019/pc/graphics/logo.svg "
+                        alt=""
+                        width="80px"
+                      />
+                      XXXXXXXXX <span style="margin-left: 36%"> XXX</span>
+                    </p>
                   </div>
                 </div>
                 <div
@@ -293,7 +339,14 @@
                       Some quick example text to build on the card title and
                       make up the bulk of the card's content.
                     </p>
-                    <p>Go somewhere</p>
+                   <p>
+                      <img
+                        src="https://s1.vnecdn.net/vnexpress/restruct/i/v921/v2_2019/pc/graphics/logo.svg "
+                        alt=""
+                        width="80px"
+                      />
+                      XXXXXXXXX <span style="margin-left: 36%"> XXX</span>
+                    </p>
                   </div>
                 </div>
                 <div
@@ -312,7 +365,14 @@
                       Some quick example text to build on the card title and
                       make up the bulk of the card's content.
                     </p>
-                    <p>Go somewhere</p>
+                    <p>
+                      <img
+                        src="https://s1.vnecdn.net/vnexpress/restruct/i/v921/v2_2019/pc/graphics/logo.svg "
+                        alt=""
+                        width="80px"
+                      />
+                      XXXXXXXXX <span style="margin-left: 36%"> XXX</span>
+                    </p>
                   </div>
                 </div>
               </div>
@@ -331,8 +391,9 @@
                   src="https://f.hoatieu.vn/data/image/2017/08/31/huong-dan-treo-quoc-ky-dung-quy-dinh-600.jpg"
                   alt="Description"
                 />
-                <p>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
-                <i class="bi bi-eye-fill p-2"> 2</i>
+                <div class="overlay-right" style="margin-right: 17px"></div>
+                <p>XXXXXXXXXXXXXXXXXXXXXXX</p>
+                <i class="bi bi-eye-fill eye-icon-right p-2"> 2</i>
               </div>
 
               <div class="image-container p-4">
@@ -340,64 +401,72 @@
                   src="https://f.hoatieu.vn/data/image/2017/08/31/huong-dan-treo-quoc-ky-dung-quy-dinh-600.jpg"
                   alt="Description"
                 />
-                <p>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
-                <i class="bi bi-eye-fill p-2"> 2</i>
+                <div class="overlay-right" style="margin-right: 17px"></div>
+                <p>XXXXXXXXXXXXXXXXXXXXXXX</p>
+                <i class="bi bi-eye-fill eye-icon-right p-2"> 2</i>
               </div>
               <div class="image-container p-4">
                 <img
                   src="https://f.hoatieu.vn/data/image/2017/08/31/huong-dan-treo-quoc-ky-dung-quy-dinh-600.jpg"
                   alt="Description"
                 />
-                <p>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
-                <i class="bi bi-eye-fill p-2"> 2</i>
+                <div class="overlay-right" style="margin-right: 17px"></div>
+                <p>XXXXXXXXXXXXXXXXXXXXXXX</p>
+                <i class="bi bi-eye-fill eye-icon-right p-2"> 2</i>
               </div>
               <div class="image-container p-4">
                 <img
                   src="https://f.hoatieu.vn/data/image/2017/08/31/huong-dan-treo-quoc-ky-dung-quy-dinh-600.jpg"
                   alt="Description"
                 />
-                <p>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
-                <i class="bi bi-eye-fill p-2"> 2</i>
+                <div class="overlay-right" style="margin-right: 17px"></div>
+                <p>XXXXXXXXXXXXXXXXXXXXXXX</p>
+                <i class="bi bi-eye-fill eye-icon-right p-2"> 2</i>
               </div>
               <div class="image-container p-4">
                 <img
                   src="https://f.hoatieu.vn/data/image/2017/08/31/huong-dan-treo-quoc-ky-dung-quy-dinh-600.jpg"
                   alt="Description"
                 />
-                <p>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
-                <i class="bi bi-eye-fill p-2"> 2</i>
+                <div class="overlay-right" style="margin-right: 17px"></div>
+                <p>XXXXXXXXXXXXXXXXXXXXXXX</p>
+                <i class="bi bi-eye-fill eye-icon-right p-2"> 2</i>
               </div>
               <div class="image-container p-4">
                 <img
                   src="https://f.hoatieu.vn/data/image/2017/08/31/huong-dan-treo-quoc-ky-dung-quy-dinh-600.jpg"
                   alt="Description"
                 />
-                <p>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
-                <i class="bi bi-eye-fill p-2"> 2</i>
+                <div class="overlay-right" style="margin-right: 17px"></div>
+                <p>XXXXXXXXXXXXXXXXXXXXXXX</p>
+                <i class="bi bi-eye-fill eye-icon-right p-2"> 2</i>
               </div>
               <div class="image-container p-4">
                 <img
                   src="https://f.hoatieu.vn/data/image/2017/08/31/huong-dan-treo-quoc-ky-dung-quy-dinh-600.jpg"
                   alt="Description"
                 />
-                <p>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
-                <i class="bi bi-eye-fill p-2"> 2</i>
+                <div class="overlay-right" style="margin-right: 17px"></div>
+                <p>XXXXXXXXXXXXXXXXXXXXXXX</p>
+                <i class="bi bi-eye-fill eye-icon-right p-2"> 2</i>
               </div>
               <div class="image-container p-4">
                 <img
                   src="https://f.hoatieu.vn/data/image/2017/08/31/huong-dan-treo-quoc-ky-dung-quy-dinh-600.jpg"
                   alt="Description"
                 />
-                <p>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
-                <i class="bi bi-eye-fill p-2"> 2</i>
+                <div class="overlay-right" style="margin-right: 17px"></div>
+                <p>XXXXXXXXXXXXXXXXXXXXXXX</p>
+                <i class="bi bi-eye-fill eye-icon-right  p-2"> 2</i>
               </div>
               <div class="image-container p-4">
                 <img
                   src="https://f.hoatieu.vn/data/image/2017/08/31/huong-dan-treo-quoc-ky-dung-quy-dinh-600.jpg"
                   alt="Description"
                 />
-                <p>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
-                <i class="bi bi-eye-fill p-2"> 2</i>
+                <div class="overlay-right" style="margin-right: 17px"></div>
+                <p>XXXXXXXXXXXXXXXXXXXXXXX</p>
+                <i class="bi bi-eye-fill eye-icon-right p-2"> 2</i>
               </div>
             </div>
           </div>
