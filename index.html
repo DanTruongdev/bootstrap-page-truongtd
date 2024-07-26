@@ -48,6 +48,7 @@
     }
 
     .image-container > i {
+      z-index: 1;
       font-style: normal;
       position: absolute;
       top: 10px;
@@ -55,6 +56,7 @@
       color: white;
       font-size: 24px;
       background: #0ab2f3;
+      padding: 1px !important;
     }
 
     .header {
@@ -125,11 +127,10 @@
       text-align: left;
       width: 100%;
       padding: 10px 10px 10px 30px;
-      border: #616769 0.5px solid;
       border-bottom: #044863;
     }
     .menu > ul > li:hover {
-      background: #329ce5;
+      background: #fb474a;
     }
 
     .grid-container > .main {
@@ -143,6 +144,17 @@
       width: 100%;
       height: 10vh;
     }
+    .eye-icon-card {
+      z-index: 1;
+      font-style: normal;
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      color: white;
+      font-size: 24px;
+      background: #0ab2f3;
+      padding: 1px !important;
+    }
   </style>
   <body>
     <div class="grid-container">
@@ -155,12 +167,12 @@
         </figure>
         <figure class="download col-2">
           <img
-            class="ios-download pt-3"
+            class="ios-download pt-2"
             src="/assets/images/ios.png"
             alt="logo"
           />
           <img
-            class="android-download pt-3"
+            class="android-download pt-2"
             src="/assets/images/android.png"
             alt="logo"
           />
@@ -168,7 +180,7 @@
       </header>
       <div class="menu">
         <ul class="list-items">
-          <li>XXXX</li>
+          <li style="background: #fb474a">XXXX</li>
           <li>XXXX</li>
           <li>XXXX</li>
           <li>XXXX</li>
@@ -191,6 +203,7 @@
               <img
                 src="https://f.hoatieu.vn/data/image/2017/08/31/huong-dan-treo-quoc-ky-dung-quy-dinh-600.jpg"
                 alt="Description"
+                style="padding-top: 17px; padding-right: 17px"
               />
               <p>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
               <i class="bi bi-eye-fill p-2"> 2</i>
@@ -202,6 +215,7 @@
                 <img
                   src="https://f.hoatieu.vn/data/image/2017/08/31/huong-dan-treo-quoc-ky-dung-quy-dinh-600.jpg"
                   alt="Description"
+                  style="padding-top: 17px; padding-right: 17px"
                 />
                 <p>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
                 <i class="bi bi-eye-fill p-2"> 2</i>
@@ -212,6 +226,7 @@
                 <img
                   src="https://f.hoatieu.vn/data/image/2017/08/31/huong-dan-treo-quoc-ky-dung-quy-dinh-600.jpg"
                   alt="Description"
+                  style="padding-top: 17px; padding-right: 17px"
                 />
                 <p>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
                 <i class="bi bi-eye-fill p-2"> 2</i>
@@ -222,9 +237,20 @@
         <!-- main -->
         <div class="row row-cols-2 p-3">
           <div class="col-md-9">
-            <div class="OK">
+            <div class="OK pb-5">
               <div>
-                <u style="font-size: 24px">XXXXX</u>
+                <p style="font-size: 26px">
+                  <span style="border-bottom: 2px solid #fb474a">XXXXX</span>
+                  <a
+                    class="btn btn-primary border-0"
+                    style="
+                      background: #13b5f3;
+                      margin-left: 10px;
+                      font-size: 20px;
+                    "
+                    >View all</a
+                  >
+                </p>
               </div>
               <div class="card-group pt-4">
                 <div
@@ -236,13 +262,14 @@
                     class="card-img-top"
                     alt="..."
                   />
+                  <i class="bi bi-eye-fill p-2 eye-icon-card"> 2</i>
                   <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">
                       Some quick example text to build on the card title and
                       make up the bulk of the card's content.
                     </p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <p>Go somewhere</p>
                   </div>
                 </div>
                 <div
@@ -254,13 +281,14 @@
                     class="card-img-top"
                     alt="..."
                   />
+                  <i class="bi bi-eye-fill p-2 eye-icon-card"> 2</i>
                   <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">
                       Some quick example text to build on the card title and
                       make up the bulk of the card's content.
                     </p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <p>Go somewhere</p>
                   </div>
                 </div>
                 <div
@@ -272,19 +300,105 @@
                     class="card-img-top"
                     alt="..."
                   />
+                  <i class="bi bi-eye-fill p-2 eye-icon-card"> 2</i>
                   <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">
                       Some quick example text to build on the card title and
                       make up the bulk of the card's content.
                     </p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <p>Go somewhere</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="OK pb-5">
+              <p style="font-size: 26px">
+                <span style="border-bottom: 2px solid #fb474a">XXXXX</span>
+                <a
+                  class="btn btn-primary border-0"
+                  style="
+                    background: #13b5f3;
+                    margin-left: 10px;
+                    font-size: 20px;
+                  "
+                  >View all</a
+                >
+              </p>
+
+              <div class="card-group pt-4">
+                <div
+                  class="card"
+                  style="width: 18rem; padding-right: 25px; border: 0"
+                >
+                  <img
+                    src="https://media.baobinhphuoc.com.vn/upload/news/7_2024/1720943178390_14461814072024.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <i class="bi bi-eye-fill p-2 eye-icon-card"> 2</i>
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <p>Go somewhere</p>
+                  </div>
+                </div>
+                <div
+                  class="card"
+                  style="width: 18rem; padding-right: 25px; border: 0"
+                >
+                  <img
+                    src="https://media.baobinhphuoc.com.vn/upload/news/7_2024/1720943178390_14461814072024.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <i class="bi bi-eye-fill p-2 eye-icon-card"> 2</i>
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <p>Go somewhere</p>
+                  </div>
+                </div>
+                <div
+                  class="card"
+                  style="width: 18rem; padding-right: 25px; border: 0"
+                >
+                  <img
+                    src="https://media.baobinhphuoc.com.vn/upload/news/7_2024/1720943178390_14461814072024.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <i class="bi bi-eye-fill p-2 eye-icon-card"> 2</i>
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <p>Go somewhere</p>
                   </div>
                 </div>
               </div>
             </div>
             <div class="OK">
-              <u style="font-size: 24px">XXXXX</u>
+              <p style="font-size: 26px">
+                <span style="border-bottom: 2px solid #fb474a">XXXXX</span>
+                <a
+                  class="btn btn-primary border-0"
+                  style="
+                    background: #13b5f3;
+                    margin-left: 10px;
+                    font-size: 20px;
+                  "
+                  >View all</a
+                >
+              </p>
               <div class="card-group pt-4">
                 <div
                   class="card"
@@ -295,13 +409,14 @@
                     class="card-img-top"
                     alt="..."
                   />
+                  <i class="bi bi-eye-fill p-2 eye-icon-card"> 2</i>
                   <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">
                       Some quick example text to build on the card title and
                       make up the bulk of the card's content.
                     </p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <p>Go somewhere</p>
                   </div>
                 </div>
                 <div
@@ -313,13 +428,14 @@
                     class="card-img-top"
                     alt="..."
                   />
+                  <i class="bi bi-eye-fill p-2 eye-icon-card"> 2</i>
                   <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">
                       Some quick example text to build on the card title and
                       make up the bulk of the card's content.
                     </p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <p>Go somewhere</p>
                   </div>
                 </div>
                 <div
@@ -331,72 +447,14 @@
                     class="card-img-top"
                     alt="..."
                   />
+                  <i class="bi bi-eye-fill p-2 eye-icon-card"> 2</i>
                   <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">
                       Some quick example text to build on the card title and
                       make up the bulk of the card's content.
                     </p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="OK">
-              <u style="font-size: 24px">XXXXX</u>
-              <div class="card-group pt-4">
-                <div
-                  class="card"
-                  style="width: 18rem; padding-right: 25px; border: 0"
-                >
-                  <img
-                    src="https://media.baobinhphuoc.com.vn/upload/news/7_2024/1720943178390_14461814072024.jpg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
-                </div>
-                <div
-                  class="card"
-                  style="width: 18rem; padding-right: 25px; border: 0"
-                >
-                  <img
-                    src="https://media.baobinhphuoc.com.vn/upload/news/7_2024/1720943178390_14461814072024.jpg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
-                </div>
-                <div
-                  class="card"
-                  style="width: 18rem; padding-right: 25px; border: 0"
-                >
-                  <img
-                    src="https://media.baobinhphuoc.com.vn/upload/news/7_2024/1720943178390_14461814072024.jpg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <p>Go somewhere</p>
                   </div>
                 </div>
               </div>
@@ -404,8 +462,10 @@
           </div>
           <!-- right -->
           <div class="right col-md-3">
-            <div style="margin-bottom: 25px">
-              <u style="font-size: 24px">XXXXX</u>
+            <div style="margin-bottom: 40px">
+              <p style="font-size: 26px">
+                <span style="border-bottom: 2px solid #fb474a">XXXXX</span>
+              </p>
             </div>
             <div class="bg-light">
               <div class="image-container p-4">
@@ -485,8 +545,11 @@
           </div>
         </div>
       </main>
-      <footer class="footer text-center">
-        <div class="pt-3">COPYRIGHT@2020 GLOBAL ALL RIGHT RESERVED</div>
+      <footer class="footer">
+        <div class="pt-3 pb-3 text-center">
+          COPYRIGHT@2020 GLOBAL ALL RIGHT RESERVED
+        </div>
+        <u class="p-2" style="font-size: 24px">XXXXXXXXXX</u>
       </footer>
     </div>
     <script

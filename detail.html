@@ -125,7 +125,7 @@
       text-align: left;
       width: 100%;
       padding: 10px 10px 10px 30px;
-      border: #616769 0.5px solid;
+    
       border-bottom: #044863;
     }
     .menu > ul > li:hover {
@@ -143,6 +143,17 @@
       width: 100%;
       height: 10vh;
     }
+    .eye-icon-card {
+      z-index: 1;
+      font-style: normal;
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      color: white;
+      font-size: 24px;
+      background: #0ab2f3;
+      padding: 1px !important;
+    }
   </style>
   <body>
     <div class="grid-container">
@@ -155,12 +166,12 @@
         </figure>
         <figure class="download col-2">
           <img
-            class="ios-download pt-3"
+            class="ios-download pt-2"
             src="/assets/images/ios.png"
             alt="logo"
           />
           <img
-            class="android-download pt-3"
+            class="android-download pt-2"
             src="/assets/images/android.png"
             alt="logo"
           />
@@ -186,7 +197,9 @@
       </div>
       <main class="main mb-3">
         <div class="row row-cols-1 p-3" style="margin-top: 40px">
-          <u style="font-size: 24px">XXXXX</u>
+          <p style="font-size: 26px">
+            <span style="border-bottom: 2px solid #fb474a">XXXXX</span>
+          </p>
         </div>
         <!-- main -->
         <div class="row row-cols-2 p-3">
@@ -196,12 +209,17 @@
                 <u style="font-size: 24px">XXXXX</u>
               </div>
             </div>
-            <img
-              src="https://media.baobinhphuoc.com.vn/upload/news/7_2024/1720943178390_14461814072024.jpg"
-              class="card-img-top mb-4"
-              height="670px"
-              alt="..."
-            />
+            <div>
+              <i class="bi bi-eye-fill p-2 eye-icon-card" style="top: 31%; right: 21%;"> 2</i>
+              <img
+                src="https://media.baobinhphuoc.com.vn/upload/news/7_2024/1720943178390_14461814072024.jpg"
+                class="card-img-top mb-4"
+                height="670px"
+                alt="..."
+              />
+              
+            </div>
+
             <div class="bg-light border">
               <p class="p-5 text-left">
                 <span style="font-size: 24px">
@@ -230,15 +248,15 @@
                 <br />
                 <span>
                   XXXXXXXXXXXXXXXX:
-                  <a href="">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</a>
+                  <a href="#" style="text-decoration: none; color: #13B5F3;">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</a>
                 </span>
-                <br />
-                <br />
-                XXXXXXXXXXXXXX
+                <div class="text-center" style="font-size: 24px; color: #fb474a">XXXXXXXXXXXXXX</div>
               </p>
             </div>
             <div class="OK">
-              <u style="font-size: 24px">XXXXX</u>
+              <p style="font-size: 26px" class="pt-3">
+                <span style="border-bottom: 2px solid #fb474a">XXXXX</span>
+              </p>
               <div class="card-group pt-4">
                 <div
                   class="card"
@@ -249,13 +267,14 @@
                     class="card-img-top"
                     alt="..."
                   />
+                  <i class="bi bi-eye-fill p-2 eye-icon-card"> 2</i>
                   <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">
                       Some quick example text to build on the card title and
                       make up the bulk of the card's content.
                     </p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <p>Go somewhere</p>
                   </div>
                 </div>
                 <div
@@ -267,13 +286,14 @@
                     class="card-img-top"
                     alt="..."
                   />
+                  <i class="bi bi-eye-fill p-2 eye-icon-card"> 2</i>
                   <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">
                       Some quick example text to build on the card title and
                       make up the bulk of the card's content.
                     </p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <p>Go somewhere</p>
                   </div>
                 </div>
                 <div
@@ -285,13 +305,14 @@
                     class="card-img-top"
                     alt="..."
                   />
+                  <i class="bi bi-eye-fill p-2 eye-icon-card"> 2</i>
                   <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">
                       Some quick example text to build on the card title and
                       make up the bulk of the card's content.
                     </p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <p>Go somewhere</p>
                   </div>
                 </div>
               </div>
@@ -299,8 +320,10 @@
           </div>
           <!-- right -->
           <div class="right col-md-3">
-            <div style="margin-bottom: 25px">
-              <u style="font-size: 24px">XXXXX</u>
+            <div style="margin-bottom: 20px">
+              <p style="font-size: 26px">
+                <span style="border-bottom: 2px solid #fb474a">XXXXX</span>
+              </p>
             </div>
             <div class="bg-light">
               <div class="image-container p-4">
@@ -380,8 +403,11 @@
           </div>
         </div>
       </main>
-      <footer class="footer text-center">
-        <div class="pt-3">COPYRIGHT@2020 GLOBAL ALL RIGHT RESERVED</div>
+      <footer class="footer">
+        <div class="pt-3 pb-3 text-center">
+          COPYRIGHT@2020 GLOBAL ALL RIGHT RESERVED
+        </div>
+        <u class="p-2" style="font-size: 24px">XXXXXXXXXX</u>
       </footer>
     </div>
     <script
